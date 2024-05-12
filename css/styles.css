@@ -197,3 +197,99 @@ body {
     letter-spacing: 0.02em;
   }
 }
+/* =======MOBILE MENU====== */
+.mobile_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile_menu.is-open {
+  transform: translateX(0);
+}
+.mobile_menu_container {
+  height: 100%;
+  padding: 24px 24px 40px 16px;
+}
+.mobile_menu_close_btn {
+  margin-left: auto;
+  margin-bottom: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0%;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile_menu_list {
+  width: 151px;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile_menu_list_iten {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.mobile_menu_list_iten:hover,
+.mobile_menu_list_iten:focus,
+.mobile_menu_address_list_link:hover,
+.mobile_menu_address_list_link:focus {
+  color: #404bbf;
+}
+.mobile_menu_address {
+  margin-top: 168px;
+  margin-bottom: 48px;
+}
+.mobile_menu_address_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile_menu_social {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile_menu_address_list_link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #434455;
+}
+.footer_item_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  padding: 8px;
+  line-height: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer_item_link:hover,
+.footer_item_link:focus {
+  background-color: #31d0aa;
+}
+.footer_item_icon {
+  fill: #f4f4fd;
+}
