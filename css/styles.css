@@ -718,6 +718,7 @@ MODAL BACKDROP
   row-gap: 72px;
 }
 .team_list_item {
+  margin: 0 auto;
   background: #ffffff;
   width: calc((100%-72px) / 4);
   border-radius: 0 0 4px 4px;
@@ -780,6 +781,9 @@ MODAL BACKDROP
   .team_list {
     row-gap: 64px;
     column-gap: 24px;
+  }
+  .team_list_item {
+    margin: 0;
   }
 }
 @media screen and (min-width: 1158px) {
