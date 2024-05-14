@@ -262,6 +262,9 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.mobile_menu_address_list_link {
+  font-style: normal;
+}
 .mobile_menu_list_iten:hover,
 .mobile_menu_list_iten:focus,
 .mobile_menu_address_list_link:hover,
@@ -578,6 +581,7 @@ MODAL BACKDROP
 
 .review_form_checkbox_label {
   display: flex;
+  flex-shrink: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
